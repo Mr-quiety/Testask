@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 @Repository
 public class inMemoryWorkerDAO {
-    private final List<Worker> WORKERS = new ArrayList<>();
+    public final List<Worker> WORKERS = new ArrayList<>();
 
     public List<Worker> findAllWorker() {
         return WORKERS;

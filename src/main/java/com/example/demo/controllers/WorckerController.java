@@ -19,7 +19,6 @@ public class WorckerController {
     private final WorkerService service;
     @GetMapping
     public List<Worker> findAllWorker(){
-        //todo
         return service.findAllWorker();
     }
     @PostMapping("save_worker")
