@@ -24,14 +24,14 @@ public class inMemoryWorkerDAOTest {
         dao.saveWorker(worker);
         assertEquals(worker, dao.findByRole("Tester"));
     }
-    //@Test
-    //public void testUpdateWorker(){
-    //    inMemoryWorkerDAO dao = new inMemoryWorkerDAO();
-    //    Worker worker = new Worker("Nikolay", "Tester",123232);
-    //    dao.saveWorker(worker);
-    //    Worker updatedWorker = new Worker("Nikolay", "Tester",123232,"Updated");
-    //    assertEquals(updatedWorker, dao.updateWorker(updatedWorker));
-    //}
+    @Test
+    public void testUpdateWorker(){
+        inMemoryWorkerDAO dao = new inMemoryWorkerDAO();
+        Worker worker = new Worker("Nikolay", "Tester",123232);
+        dao.saveWorker(worker);
+        Worker updatedWorker = new Worker("Nikolay", "Tester",123232);
+        assertEquals(updatedWorker, dao.updateWorker(updatedWorker));
+    }
     @Test
     public void testDeleteWorker(){
         inMemoryWorkerDAO dao = new inMemoryWorkerDAO();
