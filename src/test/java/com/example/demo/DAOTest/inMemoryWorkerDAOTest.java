@@ -29,7 +29,7 @@ public class inMemoryWorkerDAOTest {
         inMemoryWorkerDAO dao = new inMemoryWorkerDAO();
         Worker worker = new Worker("Nikolay", "Tester",123232);
         dao.saveWorker(worker);
-        Worker updatedWorker = new Worker("Nikolay", "Tester",123232);
+        Worker updatedWorker = new Worker("Nikita", "Tester",565443);
         assertEquals(updatedWorker, dao.updateWorker(updatedWorker));
     }
     @Test
